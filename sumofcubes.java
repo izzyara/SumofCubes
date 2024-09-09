@@ -14,13 +14,13 @@ public class sumofcubes{
         System.out.print("Input a number: ");
         int num = input.nextInt();
         int digit;
-        int sum;
+        int sum = 0;
         int cubed;
 
-        while(num>10){
+        while(num>0){
             digit = num%10;
             cubed = digit*digit*digit;
-            sum = cubed
+            sum += cubed;
             num = (num - digit)/10;
         }
     
